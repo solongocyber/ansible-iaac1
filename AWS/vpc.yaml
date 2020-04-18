@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks: 
+  - name: create a VPCwith dedicated tenancy and a couple of tags
+    ec2_vpc_net:
+      name: Dev
+      cidr_block: 10.0.0.0/16
+      region: us-east-1
